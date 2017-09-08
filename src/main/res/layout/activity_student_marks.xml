@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.admin.convetpercentage.student_marks"
+    android:background="#ec2c73">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Marks"
+            android:gravity="center"
+            android:textSize="50dp"
+            android:id="@+id/s_header"
+            android:textColor="#000001"
+            android:background="#ffffff" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter student marks"
+        android:id="@+id/total_marks"
+        android:textSize="35dip"
+        android:gravity="center"
+        android:layout_marginTop="51dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textColorHighlight="#ffffff"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:hint="               "
+        android:gravity="center"
+        android:textColor="#010101"
+        android:textSize="25dp"
+        android:layout_marginTop="176dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/student_marks"
+        android:phoneNumber="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DONE"
+        android:textSize="25dip"
+        android:id="@+id/done"
+        android:layout_below="@+id/student_marks"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:onClick="onClickMultiply" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marks after conversion is"
+        android:gravity="center"
+        android:textSize="30dip"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:id="@+id/tvfinalresultmessage"
+        android:layout_below="@+id/done"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/tvfinalresult"
+        android:layout_below="@+id/tvfinalresultmessage"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
